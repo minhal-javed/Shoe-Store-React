@@ -1,6 +1,5 @@
 import React,{useContext,useEffect} from 'react';
 import { DataContext } from '../Context/GlobalContext'
-import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { Colors } from './Colors';
 import './Cart.css'
@@ -15,7 +14,7 @@ export const Cart = ()=>{
     }, [totalAmount])
    
 
-    
+
    if(cart.length===0){
       return <h2 style={{textAlign:'center'}}>No Products Sorry</h2>
    }else{
@@ -24,7 +23,7 @@ export const Cart = ()=>{
                {
                    cart.map((shoe) => (
                        <div className='details cart' key={shoe.id}>
-                           <img src={shoe.src}></img>
+                           <img src={shoe.src} alt='shoe'></img>
 
                            <div className='box'>
                                <div className='row'>

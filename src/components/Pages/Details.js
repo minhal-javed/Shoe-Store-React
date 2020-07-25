@@ -29,7 +29,7 @@ export const Details = () => {
           {
           shoeData.map( (shoe) =>(
             <div className='details' key={shoe.id}>
-                <img src={shoe.src}></img>
+                <img src={shoe.src} alt='shoes'></img>
             
                   <div className='box'> 
                       <div className='row'>

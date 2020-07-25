@@ -17,7 +17,7 @@ export const Products = ()=>{
                 products.map(product =>(
                     <div className='card' key={product.id}>
                         <Link to={`/product/${product.id}`}>
-                            <img src={product.src} ></img>
+                            <img src={product.src} alt='' ></img>
                         </Link>
                         <div className='context'>
                             <h3>

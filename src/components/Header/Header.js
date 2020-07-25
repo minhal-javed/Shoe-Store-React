@@ -21,7 +21,7 @@ export const Header = ()=>{
         <div className="logo">
           <h1>
             <Link to="/">
-              <img src={logo1} style={{width:'100px'}}></img>
+              <img src={logo1} style={{width:'100px'}} alt='logo'></img>
             </Link>
           </h1>
         </div>
